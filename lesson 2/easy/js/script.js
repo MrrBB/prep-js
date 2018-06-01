@@ -1,7 +1,3 @@
-
-
-
-
 let monthlyIncome = prompt("Ваш бюджет на месяц?");
 let name = prompt("Название вашего магазина?");
 
@@ -12,24 +8,19 @@ for (let i = 0; i < 3; i++){
 		console.log('все верно!');
 		mainList.shopGoods[i] = a;
 	} else {
-
+		i = i - 1	
 	}
 }
 
 
 
-
-
-
 /*let i = 0;
-
 while (i < 3) {
 	let a = prompt('Какой тип товаров будем продавать?');
 	mainList.shopGoods[i] = a;
 	i++;
 	console.log(a)
 };
-
 do {
 	let a = prompt('Какой тип товаров будем продавать?');
 	mainList.shopGoods[i] = a;
@@ -39,23 +30,18 @@ do {
 
 
 
-
-
 let mainList = {
 	budget: monthlyIncome,
 	name: name,
 	shopGoods: [],
 	employers: {},
 	open: true
-};
-
-
- 
+}; 
 
 
 alert(monthlyIncome/30);
 
-/*let time = 19;
+let time = 19;
 if (time < 0) {
 	console.log('токаого не может быть ')
 } else if(time > 8 && time < 20) {
@@ -65,4 +51,3 @@ if (time < 0) {
 } else {
 	console.log('в сутках только 24 часа)');
 }
-*/
